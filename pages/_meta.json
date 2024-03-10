@@ -1,0 +1,28 @@
+{
+  "index": {
+    "type": "page",
+    "title": "Nextra",
+    "display": "hidden",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "docs": {
+    "type": "page",
+    "title": "Documentation"
+  },
+  "about": {
+    "type": "page",
+    "title": "About",
+    "theme": {
+      "sidebar": false
+    }
+  },
+  "404": {
+    "type": "page",
+    "theme": {
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  }
+}
