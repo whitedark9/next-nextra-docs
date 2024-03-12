@@ -3,6 +3,14 @@ import { useRouter } from "next/router";
 import type { DocsThemeConfig } from "nextra-theme-docs";
 import { useConfig } from "nextra-theme-docs";
 
+const PROJECT_NAME = "Project"; // TODO: Rename
+const PROJECT_LINK = "https://github.com/user";
+const REPOSITORY_LINK = PROJECT_LINK + "/" + PROJECT_NAME;
+const TITLE_SUFFIX = "- Nextra"; // TODO: Rename
+const TITLE = "Nextra"; // Project Shorthand
+const PRODUCTION_DOMAIN = "https://example.com"; // TODO: Your actual domain
+const PROJECT_DESCRIPTION = "Creating project with next-nextra-docs";
+
 // TODO: use your logo please
 const logo = (
   <svg
@@ -43,7 +51,9 @@ const logo = (
 const Footer = (
   <div className="flex w-full flex-col items-center sm:items-start">
     <div>{/**Footer */}</div>
-    <p className="mt-6 text-xs">Copy©{new Date().getFullYear()}</p>
+    <p className="mt-6 text-xs">
+      Copy©{new Date().getFullYear()} {PROJECT_NAME}
+    </p>
   </div>
 );
 
@@ -53,14 +63,6 @@ const titleComponent = ({ title, type }) => {
   }
   return <>{title}</>;
 };
-
-const PROJECT_NAME = "Project"; // TODO: Rename
-const PROJECT_LINK = "https://github.com/user";
-const REPOSITORY_LINK = PROJECT_LINK + "/" + PROJECT_NAME;
-const TITLE_SUFFIX = "- Nextra"; // TODO: Rename
-const TITLE = "Nextra"; // Project Shorthand
-const PRODUCTION_DOMAIN = "https://example.com"; // TOOD: Your actual domain
-const PROJECT_DESCRIPTION = "Creating project with next-nextra-docs";
 
 const config: DocsThemeConfig = {
   project: { link: PROJECT_LINK },
@@ -86,20 +88,12 @@ const config: DocsThemeConfig = {
         <meta name="description" content={PROJECT_DESCRIPTION} />
         <meta name="og:description" content={PROJECT_DESCRIPTION} />
         <meta name="twitter:card" content="summary_large_image" />
-        {/* <meta name="twitter:image" content={socialCard} /> */}
         <meta name="twitter:site:domain" content={PRODUCTION_DOMAIN} />
         <meta name="twitter:url" content={PRODUCTION_DOMAIN} />
         <meta name="og:title" content={title ? title + TITLE_SUFFIX : TITLE} />
-        {/* <meta name="og:image" content={socialCard} /> */}
+        <title>{title ? title + TITLE_SUFFIX : TITLE}</title>
         <meta name="apple-mobile-web-app-title" content={TITLE} />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.png" type="image/png" />
-        <link
-          rel="icon"
-          href="/favicon-dark.svg"
-          type="image/svg+xml"
-          media="(prefers-color-scheme: dark)"
-        />
         <link
           rel="icon"
           href="/favicon-dark.png"
