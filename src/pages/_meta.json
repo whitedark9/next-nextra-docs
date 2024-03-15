@@ -1,10 +1,10 @@
 {
   "index": {
     "type": "page",
-    "title": "Nextra",
+    "title": "Home",
     "display": "hidden",
     "theme": {
-      "layout": "full"
+      "typesetting": "article"
     }
   },
   "docs": {
@@ -13,10 +13,7 @@
   },
   "about": {
     "type": "page",
-    "title": "About",
-    "theme": {
-      "sidebar": false
-    }
+    "title": "About"
   },
   "404": {
     "type": "page",

@@ -139,3 +139,5 @@ Now, click `lower-case` on the sidebar. Your page will not change but only sideb
 It is because we used `index.mdx` inside `pages/docs/lower-case` folder.
 
 But still, inside the sidbar, we can rename `Index` into anything we want. Open `pages/docs/lower-case/_meta.json` and add `"index" : "Some Name"`. If you put that line above the `"lower": "Changed to Upper"`, your `Some Name` in the sidebar will also appear above the `Changed to Upper` whatever the order is in your project directory.
+
+#### Currently, I don't now how to change background colors, theme colors.

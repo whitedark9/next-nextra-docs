@@ -1,6 +1,7 @@
 {
   "name": "docs",
-  "author": "Shu Ding",
+  "version": "0.0.1",
+  "author": "whitedark",
   "license": "MIT",
   "private": true,
   "scripts": {
